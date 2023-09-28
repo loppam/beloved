@@ -61,6 +61,7 @@ button.mobile {
   border: none;
   background-color: transparent;
   font-size: 30px;
+  color: rgb(34, 0, 51);
   cursor: pointer;
 }
 .mobile-link {
