@@ -82,13 +82,15 @@ button.mobile {
     position: absolute;
     background-color: #fff;
     padding: 20px 0 0 0;
-    z-index: 2;
+    z-index: -1;
     clear: both;
-    top: 100px;
+    top: 85px;
     left: 0px;
     right: 0;
     display: flex;
-    row-gap: 1rem;
+    row-gap: 1rem;align-items: baseline;
+    padding-left: 10px;
+    padding-bottom: 10px;
     flex-direction: column;
   }
 }
