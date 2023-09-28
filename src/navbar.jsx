@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaTimes } from "react-icons/fa";
+import Scrolltosection from "./scrolltosection"
 
 const Navbar = () => {
   const [Mobile, setMobile] = useState(false);
@@ -80,16 +81,19 @@ const Navbar = () => {
             <Link
               to="/#home"
               className={activeLink === "home" ? "active" : ""}
+              onClick={() => Scrolltosection("home")}
             >
               Home
             </Link>
             <Link
               to="/#getinvolved"
               className={activeLink === "getinvolved" ? "active" : ""}
+              onClick={() => Scrolltosection("getinvolved")}
             >
               Get Involved
             </Link>
             <Link to="/#contact"
+              onClick={() => Scrolltosection("contact")}
             className={activeLink === "contact" ? "active" : ""}>Contact</Link>
             <Link to="https://wa.link/bv8ivn" target="_blank" className="btn">
               Donate Now
