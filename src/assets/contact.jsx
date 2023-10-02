@@ -48,7 +48,8 @@ const contact = () => {
               ></textarea>
 
               <input className="btn" type="submit" value="Send Message" />
-                      </form><span className="divider-dashed"></span>
+            </form>
+            <span className="divider-dashed"></span>
             <h4>Contact Info</h4>
             <p>101 St. Finbarr’s College Road, Akoka, Yaba, Lagos</p>
           </div>

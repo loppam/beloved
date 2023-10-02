@@ -42,7 +42,7 @@ const getinvolved = () => {
               A town hall different from bala blu, blue blu bulaba. broom broom
               broom brooooooooom. Bala blu blue blu bulaba.
             </p>
-            <Link to="https://sneaklin.com/" className="row_link">
+            <Link to="https://sneaklin.com/shop" className="row_link">
               Shop for collectibles {">>"}
             </Link>
           </div>

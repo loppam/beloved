@@ -16,6 +16,7 @@ const Navigated = () => {
         <Getinvolved />
       </section>
       <Howwehelp />
+
       <section id="contact">
         <Contact />
       </section>

@@ -68,7 +68,7 @@ const Navbar = () => {
       <div className={`content ${scrolllClass}`}>
         <div className="flex">
           <img
-            src="/web-logo-alt.png"
+            src="/web-logo.png"
             width="147"
             height="55"
             alt="Sneaklin Logo"

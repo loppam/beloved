@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap");
 .navbar {
-  background-color: #fff4e3;
+  background-color: #1d1d1f !important;
   position: fixed;
   top: 0;
   right: 0;
@@ -15,11 +15,11 @@
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 500;
-  color: #28385e;
+  color: #f4e2e2;
   padding: 10px 20px;
 }
 .content {
-  max-width: 1024px;
+  max-width: 1124px;
   margin: 0 auto;
   padding: 40px 0;
   transition: all 0.3s linear;
@@ -61,7 +61,7 @@ button.mobile {
   border: none;
   background-color: transparent;
   font-size: 30px;
-  color: rgb(34, 0, 51);
+  color: #f4e2e2;
   cursor: pointer;
 }
 .mobile-link {
@@ -69,18 +69,20 @@ button.mobile {
 }
 @media (max-width: 995px) {
   .navbar {
-    background-color: #fff;
     box-shadow: 0 2px 40px 0 hsla(240, 0%, 6%, 0.05);
   }
   button.mobile {
     display: block;
+  }
+  .content a{
+    color: #1d1d1f;
   }
   .lol {
     display: none;
   }
   .mobile-link {
     position: absolute;
-    background-color: #fff;
+    background-color: #f4e2e2;
     padding: 20px 0 0 0;
     z-index: -1;
     clear: both;
@@ -92,6 +94,7 @@ button.mobile {
     padding-left: 10px;
     padding-bottom: 10px;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -110,6 +113,7 @@ button.mobile {
 }
 .home_text {
   width: 45%;
+  text-align: left;
 }
 
 .swiper {
@@ -121,34 +125,35 @@ button.mobile {
   top: 0;
 }
 p.text {
-  font-size: 30px;
-  color: #28385e;
+  font-size: 1.5rem;
+  color: #303030;
   font-weight: 300;
   margin-bottom: 0px;
 }
 h2.text {
-  color: #220033;
+  color: #1d1d1f;
   font-size: 60px;
   font-weight: 500;
   margin: 0 0 15px;
 }
 span.col {
-  color: #ff980e;
+  color: #ffdcdc;
 }
 p.text_2 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0 0 10px;
-  color: #220033;
+  color: #393939;
 }
 p.text_3 {
   font-weight: 200;
-  font-size: 20px;
-  color: #220033;
+  font-size: 1.125rem;
+  color: #393939;
 }
 
 .getinvolved {
-  background-color: #220033 !important;
+  /* background-color: #220033 !important; */
+  background-color: #1d1d1f !important;
   margin-top: -150px;
 }
 
@@ -205,12 +210,12 @@ p.sub_form_submit {
   flex-direction: column;
   justify-content: flex-end;
   align-items: end;
-  max-width: 1024px;
+  max-width: 1124px;
   margin: 0 auto;
 }
 .sub_content h6 {
-  font-size: 20px;
-  color: #fff;
+  font-size: 1.25rem;
+  color: #f7ecec;
   line-height: 1.5em;
   font-weight: 500;
   margin-bottom: 15px;
@@ -219,7 +224,7 @@ p.sub_form_submit {
   width: 350px;
 }
 .divider-dashed {
-  border-color: #594066 !important;
+  border-color: #f4e2e2 !important;
   display: block;
   width: 100%;
   height: 1px;
@@ -229,17 +234,20 @@ p.sub_form_submit {
 }
 .getinvolved h2 {
   text-align: center;
-  color: #ff980e;
+  color: #f7ecec;
   margin-bottom: 20px !important;
   font-size: 60px;
   font-weight: 500;
 }
 .row {
   padding: 0 15px;
+  display: flex;
+  flex-direction: column;
 }
 .row_header {
-  color: #fd5a49;
-  font-size: 30px;
+  color: #f4e2e2;
+  font-size: 1.5rem;
+  text-align: left;
   margin: 0 0 10px 0;
   line-height: 40px;
   font-weight: 300;
@@ -248,8 +256,9 @@ p.sub_form_submit {
 .row_text {
   color: #fff;
   margin: 0 0 10px;
-  font-size: 20px;
+  font-size: 1.125rem;
   font-weight: 200;
+  text-align: left;
   line-height: 1.5em;
 }
 .getinvolved .flex {
@@ -265,11 +274,13 @@ p.sub_form_submit {
 }
 a.row_link {
   all: unset;
-  color: #ff980e;
+  color: #ffe2e2;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
+  text-align: left;
   margin: 20px 0 0;
+  cursor: pointer;
 }
 .row_socials a {
   all: unset;
@@ -278,6 +289,9 @@ a.row_link {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+.social{
+  cursor: pointer;
 }
 .ig {
   background-color: #fd5a49;
@@ -301,7 +315,7 @@ a.row_link {
   padding: 0 10px;
 }
 .divider-dashed2 {
-  border-color: #594066 !important;
+  border-color: #f4e2e2 !important;
   display: block;
   width: 100%;
   height: 1px;
@@ -332,11 +346,12 @@ a.row_link {
   display: flex;
   height: 20px;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 .question-align h4 {
-  font-size: 24px;
-  color: #ff980e;
+  font-size: 1.5rem;
+  color: #393939;
   font-weight: 400;
   font-family: "Jost";
 }
@@ -349,7 +364,7 @@ a.row_link {
 .question-icon {
   background: none;
   border: none;
-  color: #ff980e;
+  color: #393939;
   cursor: pointer;
   font-size: 22px;
   margin-left: auto;
@@ -376,19 +391,22 @@ a.row_link {
   font-weight: 200;
   line-height: 1.5em;
   font-family: "Jost";
-  color: #220033;
+  color: #393939;
+}
+.howwehelp{
+  background-color: #f4e2e2;
 }
 
 .howwehelp h2 {
   font-size: 60px;
   margin: 0 0 15px;
-  color: #220033;
+  color: #393939;
   font-weight: 500;
 }
 .howwehelp p {
-  font-size: 20px;
+  font-size: 1.125rem;
   margin: 0 0 40px;
-  color: #220033;
+  color: #393939;
   line-height: 1.5em;
   font-weight: 300;
   font-family: "Jost";
@@ -400,11 +418,11 @@ a.row_link {
   gap: 2rem;
 }
 .contact {
-  background-color: #220033 !important;
+  background-color: #1d1d1f !important;
 }
 
 .content .divider-dashed {
-  border-color: #594066 !important;
+  border-color: #f4e2e2 !important;
   display: block;
   width: 100%;
   height: 1px;
@@ -452,6 +470,10 @@ a.row_link {
   color: #fff;
   font-size: 1.3em !important;
 }
+.contact .divider-dashed{
+
+  margin-top: 0;
+}
 
 input[type="text"],
 input[type="tel"],
@@ -483,6 +505,9 @@ form {
 .contact_left {
   width: 45%;
 }
+.contact_left .divider-dashed{
+  margin-top: 3rem;
+}
 .contact h4 {
   color: #fff;
   font-size: 30px;
@@ -494,7 +519,7 @@ form {
   text-align: left;
 }
 .contact p {
-  font-size: 20px;
+  font-size: 1.125rem;
   text-align: left;
   color: #fff;
 }
@@ -504,8 +529,8 @@ footer .flex {
   margin: 0 10px;
 }
 footer {
-  color: rgb(34, 0, 51);
-  background-color: rgb(255, 244, 227);
+  color: #1d1d1f;
+  background-color: #f4e2e2;
 }
 
 footer .leftt,
@@ -513,7 +538,8 @@ footer .leftt,
   font-size: 20px;
   font-family: "Jost";
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.125rem;
+  color: #303030;
   margin: 0;
   padding: 0;
 }
